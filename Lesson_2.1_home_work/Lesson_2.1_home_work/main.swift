@@ -12,12 +12,12 @@ class MyCar {
     var power = Int()
     var acceleration = Double()
 
-    init(name: String, model: String, releaseDate: Int, color: String, engineVolume: Double, power: Int, acceleration: Double) {
+    init(name: String, model: String, releaseDate: Int, color: String, engine: Double, power: Int, acceleration: Double) {
         self.name = name
         self.model = model
         self.releaseDate = releaseDate
         self.color = color
-        self.engine = engineVolume
+        self.engine = engine
         self.power = power
         self.acceleration = acceleration
     }
@@ -31,7 +31,7 @@ class MyCar {
     }
 }
 
-var car = MyCar (name: "Toyota", model: "Camry SE", releaseDate: 2010, color: "Красный", engineVolume: 2.5, power: 100, acceleration: 10)
+var car = MyCar (name: "Toyota", model: "Camry SE", releaseDate: 2010, color: "Красный", engine: 2.5, power: 100, acceleration: 10)
 car.powerIncrease()
 /*
  2. Создать класс "Магазин" и "Продукт" и задать им свойства
